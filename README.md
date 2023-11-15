@@ -46,7 +46,7 @@ pub struct PriceData {
 }
 ```
 
-at the top of the blueprint where you wish to use the Religant Oracle method. 
+at the top of the source file containing the component where you wish to use the Religant Oracle method. 
 
 
 __SECOND__: You must __declare the component's API__ using an `extern_blueprint!` macro __inside of your blueprint module__: 
@@ -87,4 +87,4 @@ __FINALLY__: You are free to use the methods of the instantiated component in yo
 
 In this example, the `cash_xrd` method calls the Religant `get_price` method and mints a number of tokens equal to the current XRD/USD exchange rate. 
 
-The full integration example can be found in this repository's `src/lib.rs` folder.
+The full integration example contract can be found in this repository's `src/lib.rs` module.
