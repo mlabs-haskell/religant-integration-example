@@ -20,11 +20,6 @@ which takes no arguments returns a data structure:
 
 ``` rust
 pub struct PriceData {
-
-```
-
-```
-
     pub price: Decimal,
     pub timestamp: i64,
 }
