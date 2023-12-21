@@ -1,3 +1,5 @@
+# STOKENET DOCS (see master branch for mainnet)
+
 ## Overview 
 
 This repository contains an example Radix application which integrates the Religant Radix Oracle. The instructions here are intended for Radix developers who wish to integrate the Religant Oracle into their own applications.
@@ -55,7 +57,7 @@ __SECOND__: You must __declare the component's API__ using an `extern_blueprint!
 #[blueprint]
 mod oracle_client {
     extern_blueprint! {
-        "<TODO: UPDATE WITH MAINNET PACKAGE ADDRESS>",
+        "package_tdx_2_1p50j7463yhtpmq8e9t4vklw8jfuccl0xhe7g2564w8w74nrmrsacxs",
         Religant {
         fn get_price(&self) -> Option<PriceData>;
         }
@@ -67,7 +69,7 @@ __THIRD__: You must instantiate a reference to the global Religant component as 
 
 ``` rust
  const RELIGANT: Global<Religant> =
-        global_component!(Religant, "<UPDATE WITH MAINNET COMPONENT ADDRESS>");
+        global_component!(Religant, "component_tdx_2_1cpekt6s65g8025zgstwx4t0tpdsegafse0vtjnfms9k07mcmnr96cm");
 ```
 
 __FINALLY__: You are free to use the methods of the instantiated component in your own method, for example: 

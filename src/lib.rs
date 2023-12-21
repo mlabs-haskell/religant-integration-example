@@ -10,14 +10,14 @@ pub struct PriceData {
 #[blueprint]
 mod oracle_client {
     extern_blueprint! {
-        "package_rdx1phuhdg98xt90ygva6fgh357vtg20aps8mkmrdy6wn6mp4myn24rhyf",
+        "package_tdx_2_1p50j7463yhtpmq8e9t4vklw8jfuccl0xhe7g2564w8w74nrmrsacxs",
         Religant {
         fn get_price(&self) -> Option<PriceData>;
         }
     }
 
     const RELIGANT: Global<Religant> =
-        global_component!(Religant, "component_rdx1czqqs4t8f62jeyp47ctyqwmtk3vnf9sffnqd9lu7tgtgtvshj6x9lp");
+        global_component!(Religant, "component_tdx_2_1cpekt6s65g8025zgstwx4t0tpdsegafse0vtjnfms9k07mcmnr96cm");
 
     struct OracleClient {
         price_token_resource_address: ResourceAddress,
