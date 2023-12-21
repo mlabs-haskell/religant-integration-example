@@ -55,7 +55,7 @@ __SECOND__: You must __declare the component's API__ using an `extern_blueprint!
 #[blueprint]
 mod oracle_client {
     extern_blueprint! {
-        "<TODO: UPDATE WITH MAINNET PACKAGE ADDRESS>",
+        "package_rdx1phuhdg98xt90ygva6fgh357vtg20aps8mkmrdy6wn6mp4myn24rhyf",
         Religant {
         fn get_price(&self) -> Option<PriceData>;
         }
@@ -67,7 +67,7 @@ __THIRD__: You must instantiate a reference to the global Religant component as 
 
 ``` rust
  const RELIGANT: Global<Religant> =
-        global_component!(Religant, "<UPDATE WITH MAINNET COMPONENT ADDRESS>");
+        global_component!(Religant, "component_rdx1czqqs4t8f62jeyp47ctyqwmtk3vnf9sffnqd9lu7tgtgtvshj6x9lp");
 ```
 
 __FINALLY__: You are free to use the methods of the instantiated component in your own method, for example: 
